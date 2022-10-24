@@ -14,11 +14,19 @@
 /*Seccion del header*/
 header{
     display: grid;
+    position: fixed;
+    top: 0;
+    width: 100vw;
     grid-template-columns: 2fr 3fr;
-    background-color: rgba(250, 255, 255, 0.1);
+    background-color: rgba(250, 255, 255, 0.6);
     height: 80px;
-    padding: 0px 5%;
+    align-content: center;
     text-align: center;
+}
+.main-container{
+    height: 100vh;
+    position: static;
+    
 }
 .title-header{
     align-self: center;
@@ -43,4 +51,61 @@ header{
     border: none;
     border-radius: 6px;
     align-self: center;
+}
+
+
+/*Seccion del container info #1*/
+
+.container-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-inf{
+  height: 100vh;
+  width: 100%;  
+  object-fit: cover;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    padding: 15%;
+    
+
+}
+
+.info h1{
+    color: #1C6758;
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+
+.text-info{
+    font-size: 1.5rem;
+    color: var(--color3);
+    margin-bottom: 30px;
+}
+
+.stars{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-stars{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.icon{
+    width: 25px;
+    height:25px;
+    margin-right: 10px;
+}
+.container-clock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4rem;
 }
