@@ -1,0 +1,46 @@
+:root{
+    --color1: #1C6758;
+    --color2: #3D8361;
+    --color3: #D6CDA4;
+    --color4: #EEF2E6;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/*Seccion del header*/
+header{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    background-color: rgba(250, 255, 255, 0.1);
+    height: 80px;
+    padding: 0px 5%;
+    text-align: center;
+}
+.title-header{
+    align-self: center;
+    color: var(--color1);
+}
+
+.header-part2{
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;   
+}
+.header-part2 a{
+    align-self: center;
+    color: var(--color2);
+    text-decoration: none;
+}
+.btn-header{
+    background-color: #1C6758;
+    color: white;
+    height: 45px;
+    width: 120px;
+    border: none;
+    border-radius: 6px;
+    align-self: center;
+}
