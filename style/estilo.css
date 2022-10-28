@@ -22,6 +22,7 @@ header{
     height: 80px;
     align-content: center;
     text-align: center;
+    
 }
 .main-container{
     height: 100vh;
@@ -71,7 +72,7 @@ header{
     display: flex;
     flex-direction: column;
     place-content: center;
-    padding: 15%;
+    padding: 10%;
     
 
 }
@@ -107,5 +108,364 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
+
+
+/* Container location*/
+
+.location-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.container-location{
+    background-color: var(--color4);
+    width: 70%;
+    position: absolute;
+    left: 10%;
+    top: 80%;
+    align-items: center;
+    padding: 20px;
+    display: grid;
+    align-items: center;
+    grid-template-areas: 'location-titles location-titles location-titles location-titles location-btn'
+                'location-info location-info location-info location-info location-btn';
+    
+}
+
+.location-titles{
+    grid-area: location-titles;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+    color: var(--color3);
+    
+}
+.location-info{
+    grid-area: location-info;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+    color: var(--color1);
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.location-btn{
+    grid-area: location-btn;
+    display: flex;
+    place-items: center;
+   justify-content: center;
+    
+}
+.location-btn button{
+    
+    background-color: #1C6758;
+    color: white;
+    height: 45px;
+    width: 120px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 3px 9px 5px 0px rgba(230,211,211,0.78);
+    -webkit-box-shadow: 3px 9px 5px 0px rgba(230,211,211,0.78);
+    -moz-box-shadow: 3px 9px 5px 0px rgba(230,211,211,0.78);
+}
+.location-btn a{
+    
+    text-decoration: none;
+    color: white;
+    
+}
+
+/* Seccion logos de marcas */
+.container-brands{
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr;
+    grid-gap: 10px;
+    margin: 120px;
+    align-items: center;
+}
+.img-logo{
+    width: 80%;
+}
+
+
+/*container-why container-why*/
+
+.container-why{
+    margin-left: 10%;
+    margin-right: 50%;
+    text-align: left;
+}
+
+.container-why h1{
+    font-size: 3rem;
+    color: var(--color1);
+    margin-bottom: 20px;
+
+}
+.container-why p{
+    font-size: 1.5rem;
+    color: var(--color3);
+    justify-content: left;  
+}
+
+
+/*container Benefits*/
+
+
+.container-benefits{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-gap: 14px;
+    margin: 10%;
+}
+
+
+.benefits-icon{
+    width: 60px;
+    height: 60px;
+    background-color: #EEF2E6;
+    border-radius: 8px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+.box{
+    -webkit-box-shadow: 1px 1px 18px -4px #8A8A8A; 
+    box-shadow: 1px 1px 18px -4px #8A8A8A;
+}
+.icon-benefits{
+    width: 60px;
+    height:60px;
+}
+
+.benefits-main{
+    border: 1px solid var(--color4);
+    padding: 30px;
+}
+
+.benefits-main h3{
+    color: #1C6758;
+    font-size: 2rem;
+    margin: 10px 0px;
+}
+.benefits-main p{
+    color: var(--color3);
+    font-size: 1.2rem;
+}
+
+/*Before vaccine*/
+.before-vaccine{    
+    max-width: 30%;
+    position: relative;
+    display: flex;
+    left: 50%;
+    flex-direction: column;
+    justify-content: left;
+    
+    
+}
+.before-vaccine h3{   
+    display: flex;
+    margin: 20px;
+    color: var(--color1);
+    font-size: 2.5rem;
+}
+
+.before-vaccine p{    
+    color: var(--color3);
+    margin: 20px;
+    font-size: 1.5rem;
+   
+}
+
+.container-advices{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 60px;
+
+}
+
+
+.img-vaccines{
+    width: 100%;
+    height: 100%;
+}
+
+.advice{
+    display: flex;
+    align-items: center;
+    color: #1C6758;
+}
+
+.advices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.advice p{
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+/*SECCION DE emergencia contacto*/
+
+.container-emergency{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 10%;
+    margin-top: 40px;
+    max-width: 30%;
+    
+    
+}
+.container-emergency h1{
+    margin-bottom: 20px;
+    color: var(--color1);
+    font-size: 2.5rem
+}
+.container-emergency p{
+    
+    color: var(--color3);
+    font-size: 1.5rem;
+}
+
+.info-emergencyContact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+}
+
+.emergency-img{
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+    
+}
+
+
+.contact-bloque{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    margin: 30px;
+    max-height: 500px;
+    
+}
+
+.cont{
+    display: grid;
+    width: 60%;
+    border: 1px solid var(--color4);
+    -webkit-box-shadow: 1px 1px 10px -4px #8A8A8A; 
+    box-shadow: 1px 1px 10px -4px #8A8A8A;
+    max-width: 220px;
+    max-height: 220px;
+    padding: 30px;
+
+
+
+}
+
+.icon-contact{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    place-self: center;
+    margin-right: 10px;
+}
+
+.title-contact{
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    color: var(--color1);
+    font-size: 1.3rem;
+    place-content: center;  
+}
+
+
+.btn-contact{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: var(--color3);
+    border: none;
+    border-radius: 3px;
+    width: 80%;
+    height: 50%;
+    justify-self: center;
+}
+.btn-contact a{
+    text-decoration: none;
+    color: var(--color1);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+/*SECCION DEL FOOTER*/
+/*SECCION DEL FOOTER*/
+/*SECCION DEL FOOTER*/
+
+footer{
+    margin-top: 60px;
+    display: grid;
+    grid-row: 4fr 1fr;
+    background-color:#1C6758;
+    background-color: rgba(61,131,97,0.6);
+
+}
+
+.footer-info{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    margin: 20px;
+    font-size: 1rem;
+}
+
+.info-columns{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-rigths{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 60px;
+}
+
+.title-footer{
+    color: #1C6758;
+    font-size: 1.5rem;
+}
+
+.subtitle-footer{
+    color: #3D8361;
+}
+
+.text-footer{
+    font-size: 1rem;
+    color: var(--color4);
+    text-decoration: none;
+    padding-top: 5px;
+}
+
+.espacio{
+    margin-left: 40px;
+}
+
